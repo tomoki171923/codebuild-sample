@@ -1,7 +1,8 @@
-import time
 from pyutil.datetime_jp import now
+from pyutil.http_request import requestGet
 
 if __name__ == "__main__":
     print(f"******************* SAMPLE START : {now()} *******************")
-    time.sleep(5)
+    res = requestGet("https://google.com")
+    print(res)
     print(f"******************* SAMPLE END : {now()} *******************")
