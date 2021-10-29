@@ -1,2 +1,3 @@
-# sample-codebuild
-sample-codebuild-project
+# codebuild-sample
+
+codebuild sample project
