@@ -1,0 +1,20 @@
+# CodeBuild configuration file.
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+  pre_build:
+    commands:
+      - echo "start codebuild"
+  build:
+    commands:
+      - pipenv run exec
+  post_build:
+    commands:
+      - echo "end codebuild"
+#artifacts:
+#  files:
+#    - '**/*'
+#  base-directory: 'target/my-web-app'

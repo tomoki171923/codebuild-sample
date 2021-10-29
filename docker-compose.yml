@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    container_name: 'sample-codebuild'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sh -c "pipenv run exec"
+    volumes:
+      - ./:/usr/src/app
