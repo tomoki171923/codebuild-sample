@@ -5,6 +5,9 @@ phases:
   install:
     runtime-versions:
       python: 3.8
+    commands:
+      - pip install --upgrade pipenv
+      - pipenv install
   pre_build:
     commands:
       - echo "start codebuild"
